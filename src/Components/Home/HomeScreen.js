@@ -20,12 +20,21 @@ const HomeScreen = () => {
 }
 
 export default HomeScreen
-const MainScreen= styled.div`
-/* display: flex; */
-
-`
-const SideScreen = styled.div`
+const MainScreen = styled.div`
   /* display: flex; */
+  width: 600px;
+  display: flex; 
+  justify-content: center;
+  @media (max-width: 1000px) {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+`;
+const SideScreen = styled.div`
+  display: flex;
+  width:400px;
+  justify-content:flex-start;
   @media (max-width:1200px){
       display:none;
   }
@@ -36,13 +45,18 @@ width:100%;
 min-height: calc(100vh - 70px);
 height:100%;
 background: lightgray;
+padding-top:70px;
 display:flex;
 justify-content:center;
 `
 const Wrapper = styled.div`
-  width: 1200px;
-  padding-top:50px;
-  background-color: #fff;
+  width: 1000px;
+  /* padding-top: 50px; */
+  /* background-color: #fff; */
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
